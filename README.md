@@ -1,84 +1,126 @@
-# Turborepo starter
+# 🧠 Idea – Notion Clone (Study Project)
 
-This Turborepo starter is maintained by the Turborepo core team.
+**Idea** is a Notion-inspired productivity app built as a fullstack clone for learning purposes. It aims to replicate some of the core features of Notion, such as blocks, pages, nested structures, and rich content editing, across web and mobile platforms.
 
-## Using this example
+This project is not affiliated with Notion in any way.
 
-Run the following command:
+## 📚 About the Project
 
-```sh
-npx create-turbo@latest
+This project was created as a way to learn and practice fullstack development using modern tools and technologies. It is **not** intended to be a production-ready alternative to Notion, and it **will not** be monetized or promoted commercially.
+
+The core objective is to explore:
+
+- **React** for building the web interface
+- **React Native** for the mobile experience
+- **Node.js** and **Fastify** for building a performant backend API
+- **Turborepo** for managing the monorepo setup efficiently
+
+## ⚠️ Disclaimer
+
+> This project is for **educational and personal learning purposes only**.  
+> It is not intended for public use, commercial distribution, or monetization.  
+> All trademarks and copyrights are the property of their respective owners.
+
+## 🚧 Current Stack
+
+- **TypeScript**
+- **Vitest** (for unit/e2e testing)
+- **Zod v4** (for schema validation)
+
+### Frontend Web
+
+- **React** (Web)
+- **Vite**
+- **TailwindCSS v4** (with Shadcn UI)
+- **TanStack Router** (for page routing)
+- **TanStack Query** (for data fetching and caching)
+- **TanStack Table**
+- **TanStack Form**
+- **Zustand** (for global state management)
+- **Axios**
+
+### Frontend Mobile
+- **React Native**
+- **NativeWind** (with React Native Reusables)
+- **Expo** (for React Native development)
+- **Expo Router** (for navigation)
+- **TanStack Query** (for data fetching and caching)
+- **TanStack Form**
+- **Zustand** (for global state management)
+- **Axios**
+
+### Backend
+
+- **Node.js**
+- **Fastify**
+- **Fastify Type Provider Zod** (for zod integration)
+- **Fastify Swagger** (for API documentation)
+- **Prisma** (ORM)
+- **PostgreSQL**
+- **JWT** (for authentication)
+
+### Monorepo
+
+- **Turborepo**
+- **pnpm** (package manager)
+
+## 📂 Project Structure
+
+```
+apps/
+  web/         → React web app
+  mobile/      → React Native app
+  api/         → Fastify backend API
+config/
+  eslint/      → Eslint configuration
+  prettier/    → Prettier configuration
+  tsup/        → TypeScript bundler configuration
+  typescript/  → TypeScript configuration
 ```
 
-## What's inside?
+## 🚀 Getting Started
 
-This Turborepo includes the following packages/apps:
+> Requirements:
+> - Node.js >= 22
+> - pnpm
+> - PostgreSQL running locally (via docker)
 
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
+1. Clone the repo:
+```bash
+git clone https://github.com/AABB2741/idea.git
+cd idea
 ```
 
-### Develop
-
-To develop all apps and packages, run the following command:
-
+2. Install dependencies:
+```bash
+pnpm install
 ```
-cd my-turborepo
+
+3. Setup environment variables (check each app's `.env.example`)
+
+4. Run the services required:
+```bash
+docker compose up -d
+```
+
+5. Run the development servers:
+```bash
 pnpm dev
 ```
 
-### Remote Caching
+## ✨ Features (In Progress)
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+- [ ] Interface creation
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+## 🤝 Contributing
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+This is a personal study project, and contributions are not currently being accepted. However, feel free to fork the repository or use it as inspiration for your own learning!
 
-```
-cd my-turborepo
-npx turbo login
-```
+## 📄 License
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+This project is open-source and licensed under the MIT License.
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+---
 
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+**Notion** is a trademark of Notion Labs, Inc.  
+This project is not associated with or endorsed by Notion Labs, Inc.
