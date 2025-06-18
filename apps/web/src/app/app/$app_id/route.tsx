@@ -1,6 +1,12 @@
 import { createFileRoute, Outlet } from "@tanstack/react-router";
 
-import { Sidebar, SidebarProvider } from "@/components/ui/sidebar";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarProvider,
+} from "@/components/ui/sidebar";
+
+import Tree from "@/components/comp-567";
 
 export const Route = createFileRoute("/app/$app_id")({
   component: RouteComponent,
@@ -9,7 +15,11 @@ export const Route = createFileRoute("/app/$app_id")({
 function RouteComponent() {
   return (
     <SidebarProvider>
-      <Sidebar></Sidebar>
+      <Sidebar>
+        <SidebarContent>
+          <Tree />
+        </SidebarContent>
+      </Sidebar>
       <main className="min-h-screen w-full">
         <Outlet />
       </main>
