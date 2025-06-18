@@ -23,6 +23,8 @@ The core objective is to explore:
 
 ## 🚧 Current Stack
 
+- **Eslint**
+- **Prettier**
 - **TypeScript**
 - **Vitest** (for unit/e2e testing)
 - **Zod v4** (for schema validation)
