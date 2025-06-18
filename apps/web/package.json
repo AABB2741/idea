@@ -10,17 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "@tanstack/react-router": "^1.121.21",
+    "@tanstack/react-router-devtools": "^1.121.21",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
     "@idea/eslint-config": "workspace:*",
     "@idea/prettier-config": "workspace:*",
     "@idea/typescript-config": "workspace:*",
+    "@tanstack/router-plugin": "^1.121.22",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
-  }
+  },
+  "prettier": "@idea/prettier-config/react.mjs"
 }
